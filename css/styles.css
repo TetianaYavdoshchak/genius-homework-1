@@ -1,0 +1,149 @@
+/* ---Fonts--- */
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 400;
+  src: url('../fonts/play-v19-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-weight: 700;
+  src: url('../fonts/play-v19-latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-latin-700.woff2') format('woff2');
+}
+/* ---Global styles--- */
+:root {
+  --secondary-color-light: #ffffff;
+  --primary-color-light: #2b7fff;
+  --primary-color-dark: #011c44;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Play', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--primary-color-dark);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color-dark);
+}
+
+h2 {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.title-accent {
+  color: var(--primary-color-light);
+}
+
+/* ---Header--- */
+.navigation-link:hover {
+  font-weight: 700;
+  color: var(--primary-color-light);
+  cursor: pointer;
+}
+
+/* ---Section hero--- */
+.hero-title {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 140px;
+  line-height: 0.8143;
+  text-transform: capitalize;
+  color: var(--primary-color-light);
+}
+
+.hero-btn {
+  border-radius: 32px;
+  border: 2px solid var(--primary-color-light);
+  width: 219px;
+  height: 53px;
+  background: var(--primary-color-light);
+  font-weight: 600;
+  color: var(--secondary-color-light);
+}
+
+.hero-btn:hover {
+  background: var(--secondary-color-light);
+  color: var(--primary-color-dark);
+  cursor: pointer;
+}
+
+.hero-text {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #4a4a4a;
+}
+
+/* ---Section renewal--- */
+.renewal-text {
+  font-size: 22px;
+  line-height: 1.73;
+}
+
+.text-accent {
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+/* ---Section features--- */
+.features-text {
+  line-height: 1.333;
+  color: #000;
+}
+
+/* ---Section treatments--- */
+/* ---Section location--- */
+
+/* ---Footer--- */
+footer {
+  background-color: var(--primary-color-dark);
+}
+
+.footer-link,
+.address-link {
+  font-size: 16px;
+  color: var(--secondary-color-light);
+}
+
+.address-link {
+  font-style: normal;
+}
+
+.footer-link:hover,
+.address-link:hover {
+  color: var(--primary-color-light);
+}
+
+.copyright {
+  font-style: normal;
+  font-size: 13px;
+  color: #747272;
+}
